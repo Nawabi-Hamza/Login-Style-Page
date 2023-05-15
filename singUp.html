@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="curved" id="curved"></div>
+
+
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>Sign UP</h2>
+                <div class="input-box">
+                    <input type="text" required >
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required >
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required >
+                    <label>Password</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password ?</a>
+                </div>
+                <button type="submit">Sing Up</button>
+                <div class="sign-link">
+                    <p>I Have an account? 
+                        <a href="./index.html">Sing In</a>
+                    </p>
+                </div>
+                <div class="social-platform">
+                    <p>Or sign in with </p>
+                    <div class="social-icons">
+                        <a href="">F</a>
+                        <a href="">T</a>
+                        <a href="">G</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="colors">
+        <span class="color a" onclick="HandleChange('#77dd77','a')" style="--clr:#77dd77"></span>
+        <span class="color b" onclick="HandleChange('#f67599','b')" style="--clr:#f67599"></span>
+        <span class="color c active" onclick="HandleChange('#976ed7','c')" style="--clr:#976ed7"></span>
+        <span class="color d" onclick="HandleChange('#1db9c3','d')" style="--clr:#1db9c3"></span>
+        <span class="color e" onclick="HandleChange('#ffb347','e')" style="--clr:#ffb347"></span>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>

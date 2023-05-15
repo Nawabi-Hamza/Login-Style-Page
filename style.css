@@ -1,0 +1,199 @@
+*{
+    margin:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height:500px;
+    background-color: #444;
+    border-radius: 20px;
+    padding:40px;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 1;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+h2{
+    font-size: 30px;
+    color:#fff;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 320px;
+    margin: 30px 0px;
+    border-bottom: 2px solid #fff ;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .4s;
+}
+.input-box input{
+    width: 100%;
+    height: 40px;
+    background:transparent;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+    font-size: 16px;
+    color: #fff;
+}
+.input-box input:focus~label ,
+.input-box input:valid~label{
+    top: -5px;
+}
+.forgot-pass{
+    margin: -15px 0 15px 5px;
+}
+
+.forgot-pass a{
+    color: #fff;
+    font: 14px;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color:#444;
+    font-weight: 500;
+}
+
+.sign-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0px;
+}
+.sign-link p{
+    color: #fff;
+}
+.sign-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.sign-link p a:hover{
+    text-decoration: underline;
+
+}
+.social-platform{
+    font-size: 14px;
+    color:#fff;
+    text-align: center;
+
+}
+.social-icons a{
+    display: inline;
+    width:35px;
+    height:35px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius:  50%;
+    margin:15px 6px 0px;
+    text-align: center;
+    transition: .6s;
+}
+.social-icons a:hover{
+    background-color: #fff;
+    color:#444;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+
+/* Curved */
+.curved{
+    position:absolute;
+    
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background:#976ed7;
+    z-index: -1;
+    clip-path: circle(98% at 0 0);
+    /* animation: myAni 2s linear 1; */
+    /* transform: translateX(0px); */
+
+}
+.myAnimation{
+    animation: myAni 1s linear 1;
+
+}
+@keyframes myAni {
+    0%{
+        transform: translateY(-300px);
+    }  
+    100%{
+        transform: translateY(0px);
+        
+    }
+} 
+.colors{
+    position: absolute;
+    right: 0;
+    background-color: #444;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.colors .color{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr);
+    border-radius: 50%;
+    margin: 6px;
+    cursor: pointer;
+
+}
+.colors .color.active{
+    border: 2px solid #fff;
+    transform: scale(1.5);
+}
